@@ -20,7 +20,7 @@ export function NavLink(props: Omit<ComponentProps<typeof Link>, "className">) {
         `p-4 
         hover:bg-secondary hover:text-secondary-foreground
         foucs:bg-secondary foucs:text-secondary-foreground`,
-        pathmame === props.href ? "bg-backgroud text-foreground" : ""
+        pathmame === props.href && "bg-background text-foreground"
       )}
     />
   );
